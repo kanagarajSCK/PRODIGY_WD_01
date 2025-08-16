@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Animated Landing Page</title>
+  <meta name="description" content="Responsive landing page with sticky navbar, hover + scroll effects, mobile hamburger menu, reveal animations, and sections for Home, About, Services, Work, Pricing, and Contact." />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Navbar -->
+  <header id="nav" class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="badge"></span><span>Kanagaraj</span></a>
+      <nav class="links" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#contact">Get Quote</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span></button>
+    </div>
+    <div class="mobile" id="mobile">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero container">
+    <div class="hero-grid">
+      <div class="reveal">
+        <h1 class="headline">Secure, Fast & Beautiful Websites.</h1>
+        <p class="lead">We build responsive MERN apps, perform security audits, and craft UIs that convert. 100% hand‑coded.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="#work">See Work</a>
+          <a class="btn" href="#services">Our Services</a>
+        </div>
+      </div>
+      <div class="art reveal slide-left">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop" alt="dashboard preview" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2 class="title reveal">About Us</h2>
+    <p class="subtitle reveal">Security‑driven developers delivering scalable products with modern UI.</p>
+    <div class="grid grid-2">
+      <div class="card reveal slide-right">
+        <h3>Our Approach</h3>
+        <p class="subtitle">Design → Develop → Secure → Deploy. We ship fast without compromising quality.</p>
+        <ul class="subtitle" style="list-style:none; padding-left:0;">
+          <li>✅ Security first (OWASP mindset)</li>
+          <li>✅ Performance targets (Lighthouse 95+)</li>
+          <li>✅ Clean, accessible UI</li>
+          <li>✅ Ongoing support</li>
+        </ul>
+      </div>
+      <div class="card reveal slide-left">
+        <h3>Tech Stack</h3>
+        <p class="subtitle">React, Node.js, Express, MongoDB, JWT, Tailwind, Docker, CI/CD.</p>
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1600&auto=format&fit=crop" alt="team collaborating" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container">
+    <h2 class="title reveal">Services</h2>
+    <p class="subtitle reveal">End‑to‑end solutions to launch and scale.</p>
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <div class="icon">🛡️</div>
+        <h3>Security & Pentesting</h3>
+        <p class="subtitle">Vulnerability scans, audits, and hardening with reports.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">⚙️</div>
+        <h3>Full‑Stack Development</h3>
+        <p class="subtitle">MERN apps, APIs, auth, dashboards, and real‑time features.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🎨</div>
+        <h3>Design & Branding</h3>
+        <p class="subtitle">Modern UI/UX with smooth micro‑interactions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="container">
+    <h2 class="title reveal">Selected Work</h2>
+    <p class="subtitle reveal">A glimpse of recent builds.</p>
+    <div class="grid grid-2">
+      <article class="card reveal slide-right">
+        <h3>AI Chatbot Platform</h3>
+        <p class="subtitle">RAG pipeline, code highlighting, and streaming responses.</p>
+        <img src="https://innovasolutions.com/wp-content/uploads/2025/03/ai-enabled-enterprise-chatbot-platform-thumb.webp" alt="ai app" />
+      </article>
+      <article class="card reveal slide-left">
+        <h3>E‑commerce Dashboard</h3>
+        <p class="subtitle">Role‑based analytics with exports and alerts.</p>
+        <img src="https://img.freepik.com/free-vector/e-commerce-infographics-set_1284-4618.jpg?semt=ais_hybrid&w=740&q=80" alt="dashboard" />
+      </article>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="container">
+    <h2 class="title reveal">Pricing</h2>
+    <p class="subtitle reveal">Transparent plans. Custom quotes available.</p>
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <h3>Starter</h3>
+        <div class="price">₹29,999 <small>/ project</small></div>
+        <p class="subtitle">3 pages, basic SEO, analytics, 2 weeks support.</p>
+        <p><a class="cta" href="#contact">Choose Starter</a></p>
+      </article>
+      <article class="card reveal">
+        <h3>Growth</h3>
+        <div class="price">₹79,999 <small>/ project</small></div>
+        <p class="subtitle">6–8 pages, API integrations, perf tuning.</p>
+        <p><a class="cta" href="#contact">Choose Growth</a></p>
+      </article>
+      <article class="card reveal">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <p class="subtitle">Pentesting, dashboards, SLAs, training.</p>
+        <p><a class="cta" href="#contact">Request Quote</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 class="title reveal">Contact</h2>
+    <p class="subtitle reveal">Tell us about your project. We'll reply soon.</p>
+    <div class="grid grid-2">
+      <form class="card reveal slide-right" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you soon.'); this.reset();">
+        <label>Name<br>
+          <input required name="name" placeholder="Your name" style="width:100%;margin-top:6px;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:transparent;color:inherit;">
+        </label>
+        <br>
+        <label>Email<br>
+          <input required type="email" name="email" placeholder="you@example.com" style="width:100%;margin-top:6px;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:transparent;color:inherit;">
+        </label>
+        <br>
+        <label>Message<br>
+          <textarea required name="message" rows="5" placeholder="What can we build for you?" style="width:100%;margin-top:6px;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:transparent;color:inherit;resize:vertical"></textarea>
+        </label>
+        <br>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+      <div class="card reveal slide-left">
+        <h3>Reach us</h3>
+        <p class="subtitle">Email: kanagarajsck@gmail.com<br>Phone: +91 86674 91227</p>
+        <p class="subtitle">Location: India • Remote friendly</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center">
+      <div>© <span id="year"></span></div>
+      <div style="display:flex;gap:12px">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script>
+    // ===== Short helpers =====
+    const $ = (s, c=document) => c.querySelector(s);
+    const $$ = (s, c=document) => Array.from(c.querySelectorAll(s));
+
+    const progress = $('#progress');
+    const nav = $('#nav');
+    const burger = $('#burger');
+    const mobile = $('#mobile');
+    const toTop = $('#toTop');
+
+    // Year
+    $('#year').textContent = new Date().getFullYear();
+
+    // Navbar background on scroll
+    function onScroll(){
+      const st = document.documentElement.scrollTop;
+      if(st > 8) nav.classList.add('navbar-bg'); else nav.classList.remove('navbar-bg');
+
+      const h = document.documentElement;
+      const prog = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+      progress.style.width = prog + '%';
+
+      if(st > 300) toTop.classList.add('show'); else toTop.classList.remove('show');
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Mobile menu toggle
+    burger.addEventListener('click', ()=> mobile.classList.toggle('open'));
+    $$('#mobile a').forEach(a=> a.addEventListener('click', ()=> mobile.classList.remove('open')));
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold:.15, rootMargin:'0px 0px -40px 0px' });
+    $$('.reveal').forEach(el=> io.observe(el));
+
+    // Scrollspy — update active nav link
+    const sections = ['home','about','services','work','pricing','contact'].map(id=> document.getElementById(id));
+    const spy = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const id = entry.target.id;
+          $$('.links a').forEach(a=> a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+        }
+      });
+    }, { threshold:.6 });
+    sections.forEach(sec=> spy.observe(sec));
+
+    // Back to top button
+    toTop.addEventListener('click', ()=> window.scrollTo({ top:0, behavior:'smooth' }));
+  </script>
+</body>
+</html>
